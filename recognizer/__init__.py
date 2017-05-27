@@ -29,6 +29,8 @@ def predictIntent(message, classifier, balanced_data, selected_features, feature
     vectorizer_name +=  ('_selected' if selected_features else '')
     vectorizer = pickle.load(open('recognizer/vectorizer/' + vectorizer_name + '.pkl', 'rb'))
 
+    print model_name, vectorizer_name
+
     return predict(message, model, vectorizer)
 
 
