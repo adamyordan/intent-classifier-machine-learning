@@ -1,0 +1,168 @@
+* {
+	color: #555;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #f5f5f5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .container {
+        text-align: center;
+        overflow-x: scroll;
+    }
+}
+
+.card {
+    text-align: left;
+    width: 500px;
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+	box-shadow: 0px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.container-input {
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+    border-bottom: 1px solid #eee;
+	box-shadow: 0px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.container-input-content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nav {
+    background-color: #fff;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	padding: 10px 20px;
+	min-height: 10px;
+}
+
+#input-message {
+	width: 100%;
+	line-height: 1px;
+	padding: 15px 20px;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	border: 1px solid #eee;
+	outline: none;
+	transition: all 200ms;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+#input-message:focus {
+	box-shadow: 0px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+	display: block;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+#message-text {
+	display: block;	
+	margin: 5px 0 10px 5px;
+}
+
+#message-intent {
+	display: block;	
+	margin: 5px 0 10px 5px;
+	color: #1eaaf1;
+}
+
+#message-details {
+	display: block;
+	overflow: scroll;
+	background-color: #f5f5f5;
+	min-height: 20px;
+	height: 250px;
+	padding: 10px;
+	margin: 5px 0;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.8rem;
+}
+
+#loading-message {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+	display: none;
+}
+
+#title {
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#credit {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	font-weight: bold;
+	color: #bbb;
+}
+
+.checkbox-wrapper, select {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #eee;
+    padding: 10px 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    font-size: small;
+    transition: all 200ms;
+}
+
+.checkbox-wrapper:hover, select:hover {
+	box-shadow: 0px 2px 5px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+#btn-submit {
+	cursor: pointer;
+	padding: 12px 25px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: 0;
+	background-color: #4285f4;
+	color: white;
+    margin-bottom: 15px;
+    transition: all 200ms;
+    border-radius: 4px;
+    outline: none;
+    vertical-align: top;
+}
+
+@media (min-width: 900px) {
+    #btn-submit {
+        float: right;
+    }
+}
+
+#btn-submit:hover {
+	box-shadow: 0px 2px 5px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+#btn-submit:active {
+	background-color: #1255c4;
+}
+
+.checkbox-label {
+    margin-right: 5px;
+    font-size: small;
+}
